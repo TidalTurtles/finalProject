@@ -11,7 +11,7 @@ extern int isOdd(int a) asm ("isOdd_");
 extern int someCalcs(int a, int b, int c) asm ("someCalcs_");
 
 //Final part C
-// extern int arrRefld(int* arr, int element) asm ("arrRefld_");
+extern int arrRefld(int* arr, int element) asm ("arrRefld_");
 
 
 //main body
@@ -33,8 +33,8 @@ void main() {
    printf("a = %d, b = %d, c = %d, result = %d\n\n", r, w, t, someCalcs(r,w,t));
 
    //print tests for arrRefld
-   //printf("arr[2] = %d\n", arrRefld(arr, 2));
-   //printf("arr[7] = %d\n\n", arrRefld(arr, 7);
+   printf("arr[2] = %d\n", arrRefld(arr, 2));
+   printf("arr[7] = %d\n\n", arrRefld(arr, 7));
 
    //last note to the reader
    printf("Thanks again for a good semester!\n");
