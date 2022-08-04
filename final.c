@@ -5,7 +5,7 @@
 #include <stdio.h>
 
 //Final part A
-//extern int isOdd(int a) asm ("isOdd_);
+extern int isOdd(int a) asm ("isOdd_");
 
 //Final part B 
 //extern int someCalcs(int a, int b, int c) asm ("someCalcs_");
@@ -24,8 +24,8 @@ void main() {
    int q=10, w=20, e=30, r=40, t=5, y=0;
 
    //print tests for is Odd
-   //printf("\n Results of isOdd(5): %d\n", isOdd(5));
-   //printf(" Results of isOdd(10): %d\n\n", isOdd(10));
+   printf("\n Results of isOdd(5): %d\n", isOdd(5));
+   printf(" Results of isOdd(10): %d\n\n", isOdd(10));
 
    //print tests for some calcs
    //printf("a = &d, b = %d, c = %d, result = %d\n", q, w, e, someCalcs(q,w,e));
